@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
+:root {
+  --primary-color-1: #546e7a;
+  --primary-color-2: #607d8b;
+}
+
+* {
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
+  color: white;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  height: 10vh;
+  width: 100%;
+  background: #29434e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  font-size: 2em;
+  padding-left: 2em;
+}
+
+header .logo a {
+  text-decoration: none;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 1.5em;
+}
+
+header nav ul li {
+  padding: 0 2em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+section#hero {
+  background: var(--primary-color-1);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+section#hero #hero-line-1 h1 {
+  font-size: 20vh;
+  display: block;
+}
+
+section#hero #hero-line-2 h2 {
+  font-size: 10vh;
+  display: block;
+}
+
+section#hero #nav-arrows {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#hero #nav-arrows span {
+  font-size: 3em;
+}
+
+section#portfolio {
+  background: var(--primary-color-2);
+  min-height: 100vh;
+}
+
+section#portfolio #portfolio-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+section#portfolio #portfolio-grid .portfolio-grid-items {
+  background: chocolate;
+}
+
+section#contact {
+  background: var(--primary-color-1);
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
