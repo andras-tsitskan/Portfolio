@@ -52,6 +52,7 @@ section#hero {
     background: var(--primary-color-1);
     height: 100vh;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -60,6 +61,7 @@ section#hero {
     #hero-line-1 h1 {
         font-size: 20vh;
         display: block;
+        // text-align: center;
     }
 
     #hero-line-2 h2 {
