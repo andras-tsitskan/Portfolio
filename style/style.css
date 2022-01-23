@@ -11,6 +11,7 @@
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 300;
   color: white;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -104,6 +105,8 @@ section#portfolio {
   background: var(--primary-color-2);
   min-height: 100vh;
   padding-top: var(--header-height);
+  padding-bottom: var(--header-height);
+  scroll-margin-top: var(--header-height);
 }
 
 section#portfolio #portfolio-grid {
@@ -114,13 +117,32 @@ section#portfolio #portfolio-grid {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5em 5em;
-      grid-template-areas: "portfolio-item-1-img   portfolio-item-1-text" "portfolio-item-2-text   portfolio-item-2-img" "portfolio-item-3-img   portfolio-item-3-text" "portfolio-item-4-text   portfolio-item-4-img" "portfolio-item-5-img   portfolio-item-5-text" "portfolio-item-6-text   portfolio-item-6-img";
+      grid-template-areas: "portfolio-item-1-img   portfolio-item-1-text" "portfolio-item-2-text   portfolio-item-2-img" "portfolio-item-3-img   portfolio-item-3-text" "portfolio-item-4-text   portfolio-item-4-img" "portfolio-item-5-img   portfolio-item-5-text" "portfolio-item-6-text   portfolio-item-6-img" "portfolio-item-7-img   portfolio-item-7-text";
 }
 
 section#portfolio #portfolio-grid .portfolio-grid-items {
   background: chocolate;
-  width: 30vw;
-  height: 300px;
+  width: 400px;
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#portfolio #portfolio-grid .portfolio-grid-items-text {
+  background: none;
+}
+
+section#portfolio #portfolio-grid .portfolio-grid-items-text a {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 1em;
 }
 
 section#portfolio #portfolio-grid #portfolio-item-1-text {
@@ -193,6 +215,18 @@ section#portfolio #portfolio-grid #portfolio-item-6-img {
   -ms-grid-row: 6;
   -ms-grid-column: 2;
   grid-area: portfolio-item-6-img;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-7-text {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  grid-area: portfolio-item-7-text;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-7-img {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: portfolio-item-7-img;
 }
 
 section#contact {
