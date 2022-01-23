@@ -114,7 +114,7 @@ section#portfolio #portfolio-grid {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5em 5em;
-      grid-template-areas: "portfolio-item-1-img   portfolio-item-1-text" "portfolio-item-2-text   portfolio-item-2-img";
+      grid-template-areas: "portfolio-item-1-img   portfolio-item-1-text" "portfolio-item-2-text   portfolio-item-2-img" "portfolio-item-3-img   portfolio-item-3-text" "portfolio-item-4-text   portfolio-item-4-img" "portfolio-item-5-img   portfolio-item-5-text" "portfolio-item-6-text   portfolio-item-6-img";
 }
 
 section#portfolio #portfolio-grid .portfolio-grid-items {
@@ -123,16 +123,22 @@ section#portfolio #portfolio-grid .portfolio-grid-items {
   height: 300px;
 }
 
+section#portfolio #portfolio-grid #portfolio-item-1-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: portfolio-item-1-text;
+}
+
 section#portfolio #portfolio-grid #portfolio-item-1-img {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: portfolio-item-1-img;
 }
 
-section#portfolio #portfolio-grid #portfolio-item-1-text {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: portfolio-item-1-text;
+section#portfolio #portfolio-grid #portfolio-item-2-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: portfolio-item-2-text;
 }
 
 section#portfolio #portfolio-grid #portfolio-item-2-img {
@@ -141,10 +147,52 @@ section#portfolio #portfolio-grid #portfolio-item-2-img {
   grid-area: portfolio-item-2-img;
 }
 
-section#portfolio #portfolio-grid #portfolio-item-2-text {
-  -ms-grid-row: 2;
+section#portfolio #portfolio-grid #portfolio-item-3-text {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: portfolio-item-3-text;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-3-img {
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: portfolio-item-2-text;
+  grid-area: portfolio-item-3-img;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-4-text {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: portfolio-item-4-text;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-4-img {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: portfolio-item-4-img;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-5-text {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: portfolio-item-5-text;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-5-img {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: portfolio-item-5-img;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-6-text {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: portfolio-item-6-text;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-6-img {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: portfolio-item-6-img;
 }
 
 section#contact {
