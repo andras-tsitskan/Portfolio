@@ -4,6 +4,7 @@
 :root {
     --primary-color-1: #546e7a;
     --primary-color-2: #607d8b;
+    --header-height: 10vh;
 }
 
 * {
@@ -17,7 +18,7 @@
 header {
     position: fixed;
     z-index: 10;
-    height: 10vh;
+    height: var(--header-height);
     width: 100%;
     background: #29434e;
     display: flex;
@@ -83,12 +84,45 @@ section#hero {
 section#portfolio {
     background: var(--primary-color-2);
     min-height: 100vh;
+    padding-top: var(--header-height);
 
     #portfolio-grid {
         display: grid;
+        justify-items: center;
+        justify-content: center;
+        gap: 5em 5em;
+        grid-template-areas: 
+            "portfolio-item-1-img   portfolio-item-1-text"
+            "portfolio-item-2-text   portfolio-item-2-img";
 
         .portfolio-grid-items {
             background: chocolate;
+            width: 30vw;
+            height: 300px;
+        }
+
+        .portfolio-grid-items-text {
+
+        }
+
+        .portfolio-grid-items-img {
+
+        }
+
+        #portfolio-item-1-img {
+            grid-area: portfolio-item-1-img;
+        }
+
+        #portfolio-item-1-text {
+            grid-area: portfolio-item-1-text;
+        }
+
+        #portfolio-item-2-img {
+            grid-area: portfolio-item-2-img;
+        }
+
+        #portfolio-item-2-text {
+            grid-area: portfolio-item-2-text;
         }
     }
 }

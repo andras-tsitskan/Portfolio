@@ -3,6 +3,7 @@
 :root {
   --primary-color-1: #546e7a;
   --primary-color-2: #607d8b;
+  --header-height: 10vh;
 }
 
 * {
@@ -15,7 +16,7 @@
 header {
   position: fixed;
   z-index: 10;
-  height: 10vh;
+  height: var(--header-height);
   width: 100%;
   background: #29434e;
   display: -webkit-box;
@@ -101,15 +102,48 @@ section#hero #nav-arrows span {
 section#portfolio {
   background: var(--primary-color-2);
   min-height: 100vh;
+  padding-top: var(--header-height);
 }
 
 section#portfolio #portfolio-grid {
   display: -ms-grid;
   display: grid;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5em 5em;
+      grid-template-areas: "portfolio-item-1-img   portfolio-item-1-text" "portfolio-item-2-text   portfolio-item-2-img";
 }
 
 section#portfolio #portfolio-grid .portfolio-grid-items {
   background: chocolate;
+  width: 30vw;
+  height: 300px;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-1-img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: portfolio-item-1-img;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-1-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: portfolio-item-1-text;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-2-img {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: portfolio-item-2-img;
+}
+
+section#portfolio #portfolio-grid #portfolio-item-2-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: portfolio-item-2-text;
 }
 
 section#contact {
